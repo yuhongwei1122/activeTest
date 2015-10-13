@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>一站式海运与货运服务平台，您的货运管家</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/swiper.3.1.2.min.css">
+	<style type="text/css">
+		html, body {
+	        position: relative;
+	        height: 100%;
+	    }
+	    body {
+	        background: #fff;
+	        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	        font-size: 14px;
+	        color:#000;
+	        margin: 0;
+	        padding: 0;
+	    }
+		.swiper-container {
+	        width: 100%;
+	        height: 100%;
+	    }
+	    .slide1{
+	    	background:#c2c1bf;
+	    	text-align:center;
+	    	width:1190px;
+	    	height: 100%;
+	    	margin:0px auto;
+	    	overflow:hidden;
+	    	position:relative;
+	    }
+	    .slide1 .img{
+	    	float:left;
+	    }
+	    .slide1 .txt{
+	    	font-size:60px;
+	    	margin-top:20%;
+	    }
+
+	    .slide2{
+	    	background:#b5f0b7;
+	    	text-align:center;
+	    	width:1190px;
+	    	height: 100%;
+	    	margin:0px auto;
+	    	overflow:hidden;
+	    	position:relative;
+	    }
+	    .slide2 .img{
+	    	float:left;
+	    	margin-left:10%;
+	    	margin-top:20%;
+	    }
+	    .slide2 .txt{
+	    	float:left;
+	    	font-size:60px;
+	    	margin-top:20%;
+	    	margin-left:20%;
+	    }
+	    .slide3{
+	    	background:#ec6e58;
+	    	text-align:center;
+	    	width:1190px;
+	    	height: 100%;
+	    	margin:0px auto;
+	    	overflow:hidden;
+	    	position:relative;
+	    }
+	    .slide3 .img{
+	    	float:left;
+	    	margin-top:20%;
+	    	width:40%;
+	    }
+	    .slide3 .txt{
+	    	float:left;
+	    	font-size:60px;
+	    	margin-top:20%;
+	    }
+	    .slide4{
+	    	background:#e5e5e5;
+	    	text-align:center;
+	    	width:1190px;
+	    	height: 100%;
+	    	margin:0px auto;
+	    	overflow:hidden;
+	    	position:relative;
+	    }
+	    .slide4 .txt{
+	    	font-size:60px;
+	    	margin-top:20%;
+	    }
+
+	    .btn_down{width:80px;height:80px;position:absolute;bottom:0px;margin-left: -10px;left: 50%;cursor:pointer;}
+		.sign {position:absolute; width: 32px;height:12px;left:24px;}
+		#sign1_1{background: url(images/sign1.png) no-repeat ;bottom: 30px;}
+		#sign2_1{background: url(images/sign2.png) no-repeat ;bottom: 38px;}
+		#sign3_1{background: url(images/sign3.png) no-repeat ;bottom: 46px;}
+		.signImg1{background: url(images/sign_1.png) no-repeat ;bottom: 30px;}
+		.signImg2{background: url(images/sign_2.png) no-repeat ;bottom: 38px;}
+		.signImg3{background: url(images/sign_3.png) no-repeat ;bottom: 46px;}
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background:#c2c1bf;">
+				<div class="slide1">
+					<div class="img"><img src="section1.png"/></div>
+					<div class='txt'>霸气来袭</div>
+					<div class="btn_down">
+						<div class='sign signImg1' id='sign1_1'></div>
+						<div class='sign signImg2' id='sign2_1'></div>
+						<div class='sign signImg3' id='sign3_1'></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background:#b5f0b7;">
+				<div class="slide2">
+					<div class='txt'>操作简洁</div>
+					<div class="img"><img src="section2.png"/></div>
+					<div class="btn_down">
+						<div class='sign signImg1' id='sign1_2'></div>
+						<div class='sign signImg2' id='sign2_2'></div>
+						<div class='sign signImg3' id='sign3_2'></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background:#ec6e58;">
+				<div class="slide3">
+					<div class='txt'>随时随地</div>
+					<div class="img"><img src="section3.png" width="100%"/></div>
+					<div class='txt'>掌握货运动态</div>
+					<div class="btn_down">
+						<div class='sign signImg1' id='sign1_3'></div>
+						<div class='sign signImg2' id='sign2_3'></div>
+						<div class='sign signImg3' id='sign3_3'></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide" style="background:#e5e5e5;">
+				<div class="slide4">
+					<div class='txt'>沟通更简单</div>
+					<div class="img"><img src="section4.png"/></div>
+					<div class="btn_down">
+						<div class='sign signImg1' id='sign1_4'></div>
+						<div class='sign signImg2' id='sign2_4'></div>
+						<div class='sign signImg3' id='sign3_4'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    <!-- 如果需要滚动条 -->
+	    <!-- <div class="swiper-scrollbar"></div>-->
+	</div>
+	<script type="text/javascript" src="js/swiper.3.1.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		var myswiper = new Swiper(".swiper-container",{
+			width:window.innerHeight,
+			height:window.innerHeight,
+			mousewheelControl :true,
+			//切换方向，默认horizontal：水平 vertical:垂直
+			direction:"vertical",
+			loop:"true",
+			// 如果需要分页器
+		    pagination: '.swiper-pagination'
+		});
+		function signAnimate(){
+			var cicleFun=function(name1,name2,name3,shift,interval){
+				$(name1).animate({"bottom":"-="+shift+"px"},interval,function(){
+					$(name1).hide();
+					$(name2).animate({"bottom":"-="+shift+"px"},interval,function(){
+						$(name2).hide();
+						$(name3).animate({"bottom":"-="+shift+"px"},interval,function(){
+							$(name3).hide();
+							$(name1).css("bottom","+="+ shift*2+"px").show().animate({"bottom":"-="+shift+"px"},interval,function(){
+								$(name2).css("bottom","+="+shift*2+"px").show().animate({"bottom":"-="+shift+"px"},interval,function(){
+									$(name3).css("bottom","+="+shift*2+"px").show().animate({"bottom":"-="+shift+"px"},interval,function(){
+										setTimeout(function(){cicleFun(name1,name2,name3,shift,interval)},1500);
+										
+									});
+								});
+							});
+						});
+					});
+				});
+			}
+			cicleFun("#sign1_1","#sign2_1","#sign3_1",30,200);
+			cicleFun("#sign1_2","#sign2_2","#sign3_2",30,200);
+			cicleFun("#sign1_3","#sign2_3","#sign3_3",30,200);
+			cicleFun("#sign1_4","#sign2_4","#sign3_4",30,200);
+
+		}
+		signAnimate();
+	</script>
+</body>
+</html>
